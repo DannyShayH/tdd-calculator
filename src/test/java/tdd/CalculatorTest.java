@@ -48,7 +48,7 @@ class CalculatorTest {
         assertEquals(expected, actual);
     }
     @Test
-    @DisplayName("Add Method 2")
+    @DisplayName("Add Method 3 numbers")
     void CalculatorAddTest5(){
         int actual = instance.add(10,10,10);
         int expected = 30;
