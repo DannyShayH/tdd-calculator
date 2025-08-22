@@ -33,21 +33,21 @@ class CalculatorTest {
     }
     @Test
     @DisplayName("Multiply Method")
-    void CalculatorMultiplyTest2() {
+    void CalculatorMultiplyTest3() {
         int actual = instance.Multiply(10, 5);
         int expected = 50;
         assertEquals(expected, actual);
     }
     @Test
     @DisplayName("Divide Method")
-    void CalculatorDivideTest2() {
+    void CalculatorDivideTest4() {
         int actual = instance.Divide(10, 5);
         int expected = 2;
         assertEquals(expected, actual);
     }
     @Test
     @DisplayName("Add Method 2")
-    void CalculatorAddTest1(){
+    void CalculatorAddTest5(){
         int actual = instance.Add(10,10,10);
         int expected = 30;
         assertEquals(expected, actual);
