@@ -45,4 +45,11 @@ class CalculatorTest {
         int expected = 2;
         assertEquals(expected, actual);
     }
+    @Test
+    @DisplayName("Add Method 2")
+    void CalculatorAddTest1(){
+        int actual = instance.Add(10,10,10);
+        int expected = 30;
+        assertEquals(expected, actual);
+    }
 }
