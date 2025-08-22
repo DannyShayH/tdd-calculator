@@ -9,6 +9,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
     Calculator instance = new Calculator();
+    int[] numbers = {1,2,3};
+
     @BeforeEach
     void setUp() {
     }
@@ -56,6 +58,13 @@ class CalculatorTest {
     @DisplayName("String Calculator W/Splitter/Parsing")
     public void StringCalculatorCommaSeperated() {
         int actual = instance.add("1,2,3");
+        int expected = 6;
+        assertEquals(expected, actual);
+    }
+    @Test
+    @DisplayName("Add Method W/Array")
+    public void CalculatorAddTest6() {
+        int actual = instance.add(numbers);
         int expected = 6;
         assertEquals(expected, actual);
     }
