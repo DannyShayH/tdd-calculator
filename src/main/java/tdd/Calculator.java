@@ -5,22 +5,30 @@ public class Calculator {
 
     }
 
-    public int Add(int a, int b) {
+    public int add(int a, int b) {
         return a + b;
     }
 
-    public int Subtract(int a, int b) {
+    public int subtract(int a, int b) {
         return a - b;
     }
 
-    public int Multiply(int a, int b) {
+    public int multiply(int a, int b) {
         return a * b;
     }
 
-    public int Divide(int a, int b) {
+    public int divide(int a, int b) {
         return a / b;
     }
-    public int Add(int a, int b, int c) {
+    public int add(int a, int b, int c) {
         return a + b +c;
+    }
+    public int add(String numbers) {
+        String[] parts = numbers.split(",");
+        int sum = 0;
+        for(String part : parts){
+        sum += Integer.parseInt(part);
+        }
+        return sum;
     }
 }

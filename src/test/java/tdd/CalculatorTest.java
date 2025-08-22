@@ -20,36 +20,43 @@ class CalculatorTest {
     @Test
     @DisplayName("Add Method")
     void CalculatorAddTest1(){
-        int actual = instance.Add(10,10);
+        int actual = instance.add(10,10);
         int expected = 20;
         assertEquals(expected, actual);
     }
     @Test
     @DisplayName("Subtract Method")
     void CalculatorSubtractTest2() {
-        int actual = instance.Subtract(10, 5);
+        int actual = instance.subtract(10, 5);
         int expected = 5;
         assertEquals(expected, actual);
     }
     @Test
     @DisplayName("Multiply Method")
     void CalculatorMultiplyTest3() {
-        int actual = instance.Multiply(10, 5);
+        int actual = instance.multiply(10, 5);
         int expected = 50;
         assertEquals(expected, actual);
     }
     @Test
     @DisplayName("Divide Method")
     void CalculatorDivideTest4() {
-        int actual = instance.Divide(10, 5);
+        int actual = instance.divide(10, 5);
         int expected = 2;
         assertEquals(expected, actual);
     }
     @Test
     @DisplayName("Add Method 2")
     void CalculatorAddTest5(){
-        int actual = instance.Add(10,10,10);
+        int actual = instance.add(10,10,10);
         int expected = 30;
+        assertEquals(expected, actual);
+    }
+    @Test
+    @DisplayName("String Calculator W/Splitter/Parsing")
+    public void StringCalculatorCommaSeperated() {
+        int actual = instance.add("1,2,3");
+        int expected = 6;
         assertEquals(expected, actual);
     }
 }
